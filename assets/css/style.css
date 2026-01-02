@@ -87,7 +87,7 @@ body {
   width: auto;
 }
 .logo-text {
-  height: 22px;
+  height: 42px;
   width: auto;
   margin-top: 2px;
 }
@@ -269,7 +269,3 @@ li {
   }
 }
 
-.logo-symbol {
-  height: 120px !important;
-  outline: 4px solid red !important;
-}
