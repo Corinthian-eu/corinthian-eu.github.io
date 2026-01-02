@@ -181,7 +181,7 @@ h1, h2 {
       rgba(254, 190, 11, 0.88),
       rgba(254, 190, 11, 0.88)
     ),
-    url("../images/bands/band-burden.jpg") center / cover no-repeat;
+    url("../images/bands/band-burden.png") center / cover no-repeat;
 }
 
 .band-yellow-image h2,
