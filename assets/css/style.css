@@ -22,6 +22,7 @@ html, body {
   --blue-light: #e9eef5;
 
   --yellow-primary: #febe0b;
+  --yellow-light: #fff4cc;
 
   --white: #ffffff;
   --gray-light: #dbe2ee;
@@ -37,7 +38,7 @@ html, body {
 /* ---------- BASE ---------- */
 body {
   font-family: var(--font-sans);
-  font-size: 17px; /* slightly larger for body readability */
+  font-size: 17px;
   line-height: 1.7;
   color: var(--blue-primary);
   background-color: var(--white);
@@ -147,14 +148,14 @@ h1, h2 {
   color: var(--gray-light);
 }
 
-/* ---------- SECTION BANDS (NEW) ---------- */
+/* ---------- SECTION BANDS ---------- */
 
-/* Light band (default academic white with separation) */
+/* Light band */
 .band-light {
   background-color: var(--white);
 }
 
-/* Dark institutional band */
+/* Dark blue band (kept for last section) */
 .band-dark {
   background-color: var(--blue-primary);
 }
@@ -166,12 +167,31 @@ h1, h2 {
   color: var(--gray-light);
 }
 
-/* Accent band (used for CTA) */
+/* Accent band */
 .band-accent {
   background-color: var(--blue-light);
 }
 
-/* Image-backed band */
+/* ---------- YELLOW IMAGE BAND (replaces first blue band) */
+/* Upload image to: assets/images/bands/band-burden.jpg */
+.band-yellow-image {
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(254, 190, 11, 0.88),
+      rgba(254, 190, 11, 0.88)
+    ),
+    url("../images/bands/band-burden.jpg") center / cover no-repeat;
+}
+
+.band-yellow-image h2,
+.band-yellow-image h3,
+.band-yellow-image p,
+.band-yellow-image li {
+  color: var(--blue-primary);
+}
+
+/* ---------- BLUE IMAGE BAND (How we work – already working) */
 /* Upload image to: assets/images/bands/band-how.jpg */
 .band-image {
   position: relative;
@@ -188,6 +208,18 @@ h1, h2 {
 .band-image p,
 .band-image li {
   color: var(--gray-light);
+}
+
+/* ---------- WHITE IMAGE BAND (Continuous management) */
+/* Upload image to: assets/images/bands/band-management.jpg */
+.band-light-image {
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    url("../images/bands/band-management.jpg") center / cover no-repeat;
 }
 
 /* ---------- INTRO ---------- */
@@ -230,8 +262,14 @@ li {
   margin-bottom: 10px;
 }
 
+/* Fix centered text + lists (Continuous management) */
+.container.centered ul {
+  max-width: 640px;
+  margin: 24px auto;
+  text-align: left;
+}
+
 /* ---------- OFFERINGS ---------- */
-/* (unchanged, included for completeness) */
 .offerings-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -260,7 +298,6 @@ li {
 }
 
 /* ---------- SPLIT ---------- */
-/* (unchanged) */
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -289,34 +326,6 @@ li {
   width: 100%;
   height: auto;
   border-radius: 4px;
-}
-
-/* ---------- HIGHLIGHT ---------- */
-.highlight {
-  background-color: var(--blue-primary);
-  color: var(--gray-light);
-}
-
-.highlight h2 {
-  color: var(--yellow-primary);
-}
-
-.highlight strong {
-  color: var(--yellow-primary);
-}
-
-.terms {
-  list-style: none;
-  padding-left: 0;
-  font-size: 18px;
-}
-
-.terms li {
-  margin-bottom: 12px;
-}
-
-.terms li strong {
-  color: var(--yellow-primary);
 }
 
 /* ---------- FOOTER ---------- */
