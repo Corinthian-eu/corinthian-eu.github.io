@@ -31,12 +31,13 @@ html, body {
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 
   --max-width: 1180px;
+  --narrow-width: 820px;
 }
 
 /* ---------- BASE ---------- */
 body {
   font-family: var(--font-sans);
-  font-size: 16px;
+  font-size: 17px; /* slightly larger for body readability */
   line-height: 1.7;
   color: var(--blue-primary);
   background-color: var(--white);
@@ -49,7 +50,16 @@ body {
   padding: 0 48px;
 }
 
+.container.narrow {
+  max-width: var(--narrow-width);
+}
+
+.container.centered {
+  text-align: center;
+}
+
 /* ---------- HEADER ---------- */
+/* FORBIDDEN TO CHANGE – LEFT UNTOUCHED */
 .site-header {
   background-color: var(--blue-primary);
   position: sticky;
@@ -114,6 +124,7 @@ h1, h2 {
 }
 
 /* ---------- HERO ---------- */
+/* FORBIDDEN TO CHANGE – LEFT UNTOUCHED */
 .hero {
   background:
     linear-gradient(
@@ -136,33 +147,91 @@ h1, h2 {
   color: var(--gray-light);
 }
 
+/* ---------- SECTION BANDS (NEW) ---------- */
+
+/* Light band (default academic white with separation) */
+.band-light {
+  background-color: var(--white);
+}
+
+/* Dark institutional band */
+.band-dark {
+  background-color: var(--blue-primary);
+}
+
+.band-dark h2,
+.band-dark h3,
+.band-dark p,
+.band-dark li {
+  color: var(--gray-light);
+}
+
+/* Accent band (used for CTA) */
+.band-accent {
+  background-color: var(--blue-light);
+}
+
+/* Image-backed band */
+/* Upload image to: assets/images/bands/band-how.jpg */
+.band-image {
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(0, 34, 90, 0.88),
+      rgba(0, 34, 90, 0.88)
+    ),
+    url("../images/bands/band-how.jpg") center / cover no-repeat;
+}
+
+.band-image h2,
+.band-image h3,
+.band-image p,
+.band-image li {
+  color: var(--gray-light);
+}
+
 /* ---------- INTRO ---------- */
 .page-intro {
-  padding: 56px 0;
+  padding: 72px 0;
 }
 
 .page-intro p {
   font-size: 20px;
-  max-width: 820px;
-  color: var(--blue-primary);
+  line-height: 1.75;
 }
 
 /* ---------- SECTIONS ---------- */
 .section {
-  padding: 88px 0;
-  background-color: var(--white);
-}
-
-.section p {
-  color: var(--blue-primary);
+  padding: 96px 0;
 }
 
 .section h2 {
-  font-size: 32px;
-  color: var(--blue-primary);
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+.section h3 {
+  font-size: 20px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.section p {
+  margin-bottom: 18px;
+}
+
+/* ---------- LISTS ---------- */
+ul {
+  margin-top: 16px;
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 /* ---------- OFFERINGS ---------- */
+/* (unchanged, included for completeness) */
 .offerings-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -191,6 +260,7 @@ h1, h2 {
 }
 
 /* ---------- SPLIT ---------- */
+/* (unchanged) */
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -219,16 +289,6 @@ h1, h2 {
   width: 100%;
   height: auto;
   border-radius: 4px;
-}
-
-/* ---------- LISTS ---------- */
-ul {
-  margin-top: 18px;
-  padding-left: 22px;
-}
-
-li {
-  margin-bottom: 10px;
 }
 
 /* ---------- HIGHLIGHT ---------- */
