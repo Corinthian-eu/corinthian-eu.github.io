@@ -53,10 +53,14 @@ body {
 /* ---------- HEADER ---------- */
 .site-header {
   background-color: var(--blue-primary);
-  color: var(--yellow-primary);
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.site-header,
+.site-header a {
+  color: var(--yellow-primary);
 }
 
 .header-container {
@@ -66,29 +70,37 @@ body {
   min-height: 88px;
 }
 
+.logo-symbol,
+.logo-text {
+  background: transparent;
+}
+
+
 .branding {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .logo-symbol {
   height: 48px;
   width: auto;
 }
-
-
-.brand-text {
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  color: var(--white);
+.logo-text {
+  height: 22px;
+  width: auto;
+  margin-top: 2px;
 }
 
 .main-nav a {
   color: var(--yellow-primary);
   text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
+
 
 .main-nav a:hover {
   text-decoration: underline;
@@ -104,8 +116,8 @@ h1, h2 {
 .hero {
   background:
     linear-gradient(
-      rgba(0, 48, 117, 0.92),
-      rgba(0, 48, 117, 0.92)
+      rgba(0, 48, 117, 0.94),
+      rgba(0, 48, 117, 0.94)
     ),
     url("../images/hero/hero-academic.jpg") center / cover no-repeat;
   min-height: 520px;
@@ -152,6 +164,7 @@ h1, h2 {
 }
 
 /* ---------- SPLIT ---------- */
+
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -159,15 +172,24 @@ h1, h2 {
   align-items: center;
 }
 
+.split.reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+.split.reverse .text-block {
+  order: 2;
+}
+
+.split.reverse .image {
+  order: 1;
+}
+
+
 .text-block p,
 .text-block li {
   color: var(--blue-primary);
 }
 
-
-.split.reverse {
-  grid-template-columns: 0.9fr 1.1fr;
-}
 
 .split .image img {
   width: 100%;
@@ -227,12 +249,15 @@ li {
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
 
-  .main-nav a {
-    margin-left: 0;
-    margin-right: 16px;
+  .branding {
+    justify-content: center;
+  }
+
+  .logo-text {
+    height: 20px;
   }
 
   .hero-content h1 {
@@ -243,4 +268,3 @@ li {
     padding: 64px 0;
   }
 }
-
