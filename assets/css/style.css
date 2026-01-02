@@ -33,7 +33,6 @@ html, body {
   --max-width: 1180px;
 }
 
-
 /* ---------- BASE ---------- */
 body {
   font-family: var(--font-sans);
@@ -114,7 +113,6 @@ h1, h2 {
   letter-spacing: 0.2px;
 }
 
-
 /* ---------- HERO ---------- */
 .hero {
   background:
@@ -138,8 +136,7 @@ h1, h2 {
   color: var(--gray-light);
 }
 
-
-/* ----- intro ------*/
+/* ---------- INTRO ---------- */
 .page-intro {
   padding: 56px 0;
 }
@@ -150,12 +147,11 @@ h1, h2 {
   color: var(--blue-primary);
 }
 
-
 /* ---------- SECTIONS ---------- */
 .section {
   padding: 88px 0;
   background-color: var(--white);
-}  
+}
 
 .section p {
   color: var(--blue-primary);
@@ -166,8 +162,35 @@ h1, h2 {
   color: var(--blue-primary);
 }
 
-/* ---------- SPLIT ---------- */
+/* ---------- OFFERINGS ---------- */
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
 
+.offering-box {
+  border: 1px solid var(--blue-light);
+  padding: 40px;
+  background-color: var(--white);
+}
+
+.offering-box h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.offering-price {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--blue-primary);
+}
+
+.offering-box p {
+  margin-bottom: 14px;
+}
+
+/* ---------- SPLIT ---------- */
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -187,12 +210,10 @@ h1, h2 {
   order: 1;
 }
 
-
 .text-block p,
 .text-block li {
   color: var(--blue-primary);
 }
-
 
 .split .image img {
   width: 100%;
@@ -238,7 +259,6 @@ li {
   color: var(--yellow-primary);
 }
 
-
 /* ---------- FOOTER ---------- */
 .site-footer {
   background-color: var(--blue-dark);
@@ -246,7 +266,6 @@ li {
   padding: 32px 0;
   font-size: 13px;
 }
-
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
@@ -270,5 +289,8 @@ li {
   .section {
     padding: 64px 0;
   }
-}
 
+  .offerings-grid {
+    grid-template-columns: 1fr;
+  }
+}
