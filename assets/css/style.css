@@ -1,1 +1,265 @@
+/* =========================================================
+   CORINTHIAN — INSTITUTIONAL CSS
+   Style reference: UC Berkeley / major universities
+   Principles: restraint, hierarchy, whitespace, legibility
+   ========================================================= */
+
+/* ---------- CSS RESET (MINIMAL, SAFE) ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- ROOT VARIABLES (COLOR DISCIPLINE) ---------- */
+:root {
+  /* Core palette */
+  --blue-primary: #083c7e;   /* main institutional blue */
+  --blue-dark: #003262;      /* deeper academic blue */
+  --blue-muted: #1f3a5f;
+
+  --white: #fdfdfd;
+  --gray-100: #f7f7f7;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --gray-700: #374151;
+  --gray-900: #111827;
+
+  /* Typography */
+  --font-serif: Georgia, "Times New Roman", Times, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+
+  /* Layout */
+  --max-width: 1120px;
+}
+
+/* ---------- BASE TYPOGRAPHY ---------- */
+body {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--gray-900);
+  background-color: var(--white);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--gray-900);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+ul {
+  margin: 12px 0 24px 20px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* ---------- LINKS ---------- */
+a {
+  color: var(--blue-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- LAYOUT CONTAINER ---------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  border-bottom: 1px solid var(--gray-200);
+  background-color: var(--white);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 88px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 44px;
+  width: auto;
+}
+
+.main-nav a {
+  margin-left: 32px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--blue-dark);
+}
+
+.main-nav a:first-child {
+  margin-left: 0;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  position: relative;
+  background-color: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: relative;
+  margin-top: -280px;
+  padding-bottom: 120px;
+}
+
+.hero-text h1 {
+  max-width: 720px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  max-width: 640px;
+  color: var(--gray-700);
+}
+
+/* ---------- GENERIC SECTION ---------- */
+.section {
+  padding: 96px 0;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+/* ---------- SPLIT SECTIONS ---------- */
+.split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.split.reverse {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.split .image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--gray-200);
+}
+
+/* ---------- HIGHLIGHT / TERMS ---------- */
+.highlight {
+  background-color: var(--gray-100);
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.highlight h2 {
+  margin-bottom: 24px;
+}
+
+.terms {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+
+.terms li {
+  margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  border-top: 1px solid var(--gray-200);
+  padding: 40px 0;
+  font-size: 14px;
+  color: var(--gray-500);
+  font-family: var(--font-sans);
+}
+
+/* ---------- RESPONSIVE (STRICT, NO FLASHY BEHAVIOR) ---------- */
+@media (max-width: 1024px) {
+  .split,
+  .split.reverse {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-text {
+    margin-top: -220px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .main-nav a {
+    margin-left: 20px;
+  }
+
+  .hero-image img {
+    height: 360px;
+  }
+}
 
