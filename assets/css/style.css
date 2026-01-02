@@ -167,12 +167,12 @@ h1, h2 {
   color: var(--gray-light);
 }
 
-/* Accent band */
+/* Accent band (CTA base) */
 .band-accent {
   background-color: var(--blue-light);
 }
 
-/* ---------- YELLOW IMAGE BAND (replaces first blue band) */
+/* ---------- YELLOW IMAGE BAND (Hidden burden) */
 /* Upload image to: assets/images/bands/band-burden.png */
 .band-yellow-image {
   position: relative;
@@ -191,7 +191,7 @@ h1, h2 {
   color: var(--blue-primary);
 }
 
-/* ---------- BLUE IMAGE BAND (How we work – already working) */
+/* ---------- BLUE IMAGE BAND (How we work) */
 /* Upload image to: assets/images/bands/band-how.jpg */
 .band-image {
   position: relative;
@@ -262,11 +262,47 @@ li {
   margin-bottom: 10px;
 }
 
-/* Fix centered text + lists (Continuous management) */
+/* Fix centered text + lists */
 .container.centered ul {
   max-width: 640px;
   margin: 24px auto;
   text-align: left;
+}
+
+/* ---------- CTA OFFERINGS (FINAL SECTION) ---------- */
+.band-accent.cta-offerings {
+  background-color: var(--yellow-primary);
+}
+
+.cta-text {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  line-height: 1.4;
+  color: var(--blue-primary);
+  margin: 0;
+}
+
+.cta-link {
+  color: var(--blue-primary);
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  padding: 0 6px;
+}
+
+.cta-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.15em;
+  width: 100%;
+  height: 0.4em;
+  background-color: rgba(0, 48, 117, 0.18);
+  z-index: -1;
+}
+
+.cta-link:hover::after {
+  background-color: rgba(0, 48, 117, 0.28);
 }
 
 /* ---------- OFFERINGS ---------- */
@@ -361,5 +397,9 @@ li {
 
   .offerings-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cta-text {
+    font-size: 22px;
   }
 }
