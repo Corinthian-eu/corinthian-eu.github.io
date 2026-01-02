@@ -67,7 +67,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 88px;
+  min-height: 96px;
 }
 
 .logo-symbol,
