@@ -75,7 +75,6 @@ body {
   background: transparent;
 }
 
-
 .branding {
   display: flex;
   align-items: center;
@@ -86,6 +85,7 @@ body {
   height: 100px;
   width: auto;
 }
+
 .logo-text {
   height: 42px;
   width: auto;
@@ -101,6 +101,9 @@ body {
   text-transform: uppercase;
 }
 
+.main-nav a + a {
+  margin-left: 40px;
+}
 
 .main-nav a:hover {
   text-decoration: underline;
