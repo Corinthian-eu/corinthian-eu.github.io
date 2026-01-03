@@ -264,6 +264,30 @@ li {
   text-align: left;
 }
 
+/* ---------- OFFERINGS INTRO ---------- */
+.band-accent.offerings-intro {
+  background-color: var(--yellow-primary);
+}
+
+.offerings-intro-text {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--blue-primary);
+  margin-bottom: 20px;
+}
+
+.offerings-intro-contact {
+  font-size: 18px;
+  color: var(--blue-primary);
+}
+
+.offerings-intro-contact a {
+  color: var(--blue-primary);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* ---------- CTA OFFERINGS ---------- */
 .band-accent.cta-offerings {
   background-color: var(--yellow-primary);
