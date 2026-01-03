@@ -150,12 +150,10 @@ h1, h2 {
 
 /* ---------- SECTION BANDS ---------- */
 
-/* Light band */
 .band-light {
   background-color: var(--white);
 }
 
-/* Dark blue band (kept for last section) */
 .band-dark {
   background-color: var(--blue-primary);
 }
@@ -167,12 +165,12 @@ h1, h2 {
   color: var(--gray-light);
 }
 
-/* Accent band (CTA base) */
 .band-accent {
   background-color: var(--blue-light);
 }
 
-/* ---------- YELLOW IMAGE BAND (Hidden burden) */
+/* ---------- IMAGE BANDS ---------- */
+
 /* Upload image to: assets/images/bands/band-burden.png */
 .band-yellow-image {
   position: relative;
@@ -191,7 +189,6 @@ h1, h2 {
   color: var(--blue-primary);
 }
 
-/* ---------- BLUE IMAGE BAND (How we work) */
 /* Upload image to: assets/images/bands/band-how.jpg */
 .band-image {
   position: relative;
@@ -210,7 +207,6 @@ h1, h2 {
   color: var(--gray-light);
 }
 
-/* ---------- WHITE IMAGE BAND (Continuous management) */
 /* Upload image to: assets/images/bands/band-management.jpg */
 .band-light-image {
   position: relative;
@@ -262,14 +258,13 @@ li {
   margin-bottom: 10px;
 }
 
-/* Fix centered text + lists */
 .container.centered ul {
   max-width: 640px;
   margin: 24px auto;
   text-align: left;
 }
 
-/* ---------- CTA OFFERINGS (FINAL SECTION) ---------- */
+/* ---------- CTA OFFERINGS ---------- */
 .band-accent.cta-offerings {
   background-color: var(--yellow-primary);
 }
@@ -306,6 +301,11 @@ li {
 }
 
 /* ---------- OFFERINGS ---------- */
+
+.section.offerings-section {
+  background-color: var(--blue-light);
+}
+
 .offerings-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -313,9 +313,10 @@ li {
 }
 
 .offering-box {
-  border: 1px solid var(--blue-light);
-  padding: 40px;
   background-color: var(--white);
+  border: 1px solid var(--blue-light);
+  padding: 48px 42px;
+  position: relative;
 }
 
 .offering-box h2 {
@@ -324,8 +325,10 @@ li {
 }
 
 .offering-price {
+  font-family: var(--font-serif);
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   color: var(--blue-primary);
 }
 
@@ -333,35 +336,45 @@ li {
   margin-bottom: 14px;
 }
 
-/* ---------- SPLIT ---------- */
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
+/* Flagship offering */
+.offering-flagship {
+  border: 2px solid var(--blue-primary);
 }
 
-.split.reverse {
-  grid-template-columns: 1fr 1fr;
+.offering-flagship::before {
+  content: "Flagship Engagement";
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  background-color: var(--blue-primary);
+  color: var(--yellow-primary);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 10px;
 }
 
-.split.reverse .text-block {
-  order: 2;
+/* Standard offering */
+.offering-standard {
+  border-color: var(--blue-light);
 }
 
-.split.reverse .image {
-  order: 1;
+/* Closed offering */
+.offering-closed {
+  opacity: 0.75;
 }
 
-.text-block p,
-.text-block li {
+.offering-closed::after {
+  content: "Currently Closed";
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--blue-primary);
-}
-
-.split .image img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
+  border: 1px solid var(--blue-primary);
+  padding: 4px 8px;
 }
 
 /* ---------- FOOTER ---------- */
