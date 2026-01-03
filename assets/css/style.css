@@ -376,15 +376,19 @@ li {
   color: var(--blue-primary);
   background-color: var(--yellow-light);
   padding: 6px 10px;
-  margin-bottom: 28px;
-
-  /* KEY FIX */
-  align-self: flex-start;
+  margin: 0 0 32px;
+  align-self: stretch;
+  text-align: center;
 }
 
 /* Body text */
 .offering-box p {
   margin-bottom: 14px;
+}
+
+.offering-box > h2,
+.offering-box > .offering-rating {
+  min-height: 64px;
 }
 
 /* Push long text to bottom so cards align */
