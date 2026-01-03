@@ -368,6 +368,10 @@ li {
   margin-bottom: 18px;
 }
 
+.offering-rating {
+  color: var(--yellow-primary);
+}
+
 /* Price */
 .offering-price {
   font-family: var(--font-serif);
