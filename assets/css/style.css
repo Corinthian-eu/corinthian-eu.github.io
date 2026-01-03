@@ -278,6 +278,19 @@ li {
   margin-bottom: 24px;
 }
 
+.offerings-intro-contact {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--blue-primary);
+  margin-top: 8px;
+}
+
+.offerings-intro-contact a {
+  color: var(--blue-primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
 
 /* ---------- CTA OFFERINGS ---------- */
 .band-accent.cta-offerings {
