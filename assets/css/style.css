@@ -338,7 +338,7 @@ li {
   box-shadow: 0 12px 28px rgba(0, 34, 90, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-  /* KEY FIX: vertical structure */
+  /* vertical alignment system */
   display: flex;
   flex-direction: column;
 }
@@ -348,19 +348,20 @@ li {
   box-shadow: 0 18px 40px rgba(0, 34, 90, 0.12);
 }
 
-/* Header block (title + stars) */
+/* ---------- HEADER BLOCK (fixed heights) ---------- */
 .offering-box h2 {
   font-size: 26px;
-  margin-bottom: 10px;
   line-height: 1.25;
+  margin-bottom: 10px;
+  min-height: 64px; /* ensures identical title height */
 }
 
-/* Star rating */
 .offering-rating {
   font-size: 18px;
   letter-spacing: 2px;
   color: var(--yellow-primary);
   margin-bottom: 22px;
+  min-height: 28px; /* ensures identical rating height */
 }
 
 .offering-closed .offering-rating {
@@ -368,7 +369,7 @@ li {
   opacity: 1;
 }
 
-/* Price — now aligned */
+/* ---------- PRICE (now perfectly aligned) ---------- */
 .offering-price {
   font-family: var(--font-serif);
   font-size: 18px;
@@ -377,6 +378,8 @@ li {
   background-color: var(--yellow-light);
   padding: 6px 10px;
   margin: 0 0 32px;
+
+  /* key alignment fix */
   align-self: stretch;
   text-align: center;
 }
@@ -386,12 +389,7 @@ li {
   margin-bottom: 14px;
 }
 
-.offering-box > h2,
-.offering-box > .offering-rating {
-  min-height: 64px;
-}
-
-/* Push long text to bottom so cards align */
+/* Prevent uneven bottom spacing */
 .offering-box p:last-of-type {
   margin-bottom: 0;
 }
@@ -440,7 +438,6 @@ li {
   border: 1px solid var(--blue-primary);
   padding: 6px 10px;
 }
-
 
 /* ---------- FOOTER ---------- */
 .site-footer {
