@@ -363,6 +363,11 @@ li {
   margin-bottom: 22px;
 }
 
+.offering-closed .offering-rating {
+  color: var(--yellow-primary);
+  opacity: 1;
+}
+
 /* Price — now aligned */
 .offering-price {
   font-family: var(--font-serif);
