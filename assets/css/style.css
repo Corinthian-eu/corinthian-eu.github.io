@@ -293,6 +293,30 @@ h1, h2 {
 }
 
 
+/* ---------- SOCIAL PROOF (DUAL QUOTES) ---------- */
+
+.proof-dual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: stretch;
+}
+
+/* Reuse proof-block, but slightly tighter for dual layout */
+.proof-dual .proof-block {
+  padding: 48px 56px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .proof-dual {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+
+
 
 /* ---------- CTA ---------- */
 
