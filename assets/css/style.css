@@ -223,6 +223,25 @@ h1, h2 {
   padding: 72px 0;
 }
 
+/* ---------- INTRO SPLIT (TEXT + IMAGE) ---------- */
+.intro-split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.intro-text {
+  max-width: 100%;
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
 .page-intro p {
   font-size: 20px;
   line-height: 1.75;
@@ -510,4 +529,13 @@ li {
   .cta-text {
     font-size: 22px;
   }
+}
+/* Intro split responsive */
+.intro-split {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.intro-image {
+  order: -1;
 }
