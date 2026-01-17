@@ -222,21 +222,27 @@ h1, h2 {
   }
 }
 
+
+
+
 /* ---------- SOCIAL PROOF (QUOTE + EVIDENCE SPLIT) ---------- */
 
 .proof-split {
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  gap: 64px;
-  align-items: center;
+  grid-template-columns: 1fr 1fr; /* true halves */
+  align-items: stretch;
+  min-height: 420px;
 }
 
 /* ---------- QUOTE BLOCK ---------- */
 
 .proof-block {
-  padding: 48px 56px;
-  background-color: #f7f9fc; /* very light institutional tint */
+  padding: 64px 72px;
+  background-color: #f7f9fc;
   border-left: 6px solid var(--blue-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Quotation text */
@@ -257,21 +263,21 @@ h1, h2 {
 
 /* Citation */
 .proof-block cite {
-  display: block;
   font-style: normal;
   font-size: 15px;
   letter-spacing: 0.02em;
   color: var(--gray-medium);
 }
 
-/* ---------- EVIDENCE IMAGE ---------- */
+/* ---------- EVIDENCE PANEL ---------- */
 
-.proof-evidence img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  opacity: 0.85;        /* soft, credible */
-  filter: saturate(0.9);
+.proof-evidence {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)
+    ),
+    url("../images/universities/lse big.webp") center / contain no-repeat;
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -279,13 +285,13 @@ h1, h2 {
 @media (max-width: 768px) {
   .proof-split {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
 
   .proof-evidence {
-    order: -1;
+    min-height: 260px;
   }
 }
+
 
 
 /* ---------- CTA ---------- */
