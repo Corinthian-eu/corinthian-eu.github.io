@@ -529,8 +529,8 @@ li {
   .cta-text {
     font-size: 22px;
   }
-}
-/* Intro split responsive */
+
+   /* Intro split responsive */
 .intro-split {
   grid-template-columns: 1fr;
   gap: 40px;
@@ -539,3 +539,5 @@ li {
 .intro-image {
   order: -1;
 }
+}
+
