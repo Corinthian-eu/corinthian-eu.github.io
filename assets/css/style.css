@@ -531,10 +531,6 @@ li {
   }
 
    /* Intro split responsive */
-.intro-split {
-  grid-template-columns: 1fr;
-  gap: 40px;
-}
 
    .section.band-light .intro-split {
   grid-template-columns: 1fr;
