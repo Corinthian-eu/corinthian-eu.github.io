@@ -234,6 +234,18 @@ h1, h2 {
   min-height: 420px;
 }
 
+/* ---------- WIDE SOCIAL PROOF BAND ---------- */
+
+.proof-wide {
+  padding: 0; /* section padding handled inside */
+}
+
+.proof-split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  min-height: 520px;
+}
+
 /* ---------- QUOTE BLOCK ---------- */
 
 .proof-block {
