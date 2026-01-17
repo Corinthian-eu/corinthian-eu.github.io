@@ -148,6 +148,71 @@ h1, h2 {
   color: var(--gray-light);
 }
 
+
+/* ---------- INSTITUTIONAL INTRO ---------- */
+
+.institutional-intro {
+  background-color: #ffffff;
+  padding: 96px 0 64px;
+}
+
+.institutional-headline {
+  font-family: var(--font-serif);
+  font-size: 40px;
+  line-height: 1.25;
+  color: var(--blue-primary);
+  margin-bottom: 18px;
+}
+
+.institutional-metric {
+  font-size: 18px;
+  color: var(--gray-medium);
+  margin-bottom: 48px;
+}
+
+/* ---------- UNIVERSITY SIGNAL BAND ---------- */
+
+.institutional-logos {
+  border-top: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-light);
+  padding: 24px 0;
+  overflow: hidden;
+}
+
+.logos-track {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos-track img {
+  height: 36px;
+  width: auto;
+  opacity: 0.65;
+  filter: grayscale(100%);
+}
+
+/* ---------- CTA ---------- */
+
+.institutional-cta {
+  margin-top: 32px;
+  text-align: right;
+}
+
+.institutional-link {
+  font-size: 14px;
+  color: var(--blue-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue-primary);
+  padding-bottom: 2px;
+}
+
+.institutional-link:hover {
+  opacity: 0.8;
+}
+
+
 /* ---------- SECTION BANDS ---------- */
 
 .band-light {
