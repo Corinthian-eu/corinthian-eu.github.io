@@ -255,6 +255,9 @@ h1, h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Quotation text */
