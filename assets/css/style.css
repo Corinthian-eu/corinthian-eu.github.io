@@ -229,10 +229,10 @@ h1, h2 {
 
 .proof-split {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* true halves */
-  align-items: stretch;
-  min-height: 420px;
+  grid-template-columns: 1.2fr 0.8fr;
+  min-height: 380px;
 }
+
 
 /* ---------- WIDE SOCIAL PROOF BAND ---------- */
 
@@ -243,13 +243,13 @@ h1, h2 {
 .proof-split {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  min-height: 520px;
+  min-height: 380px;
 }
 
 /* ---------- QUOTE BLOCK ---------- */
 
 .proof-block {
-  padding: 64px 72px;
+  padding: 44px 56px;
   background-color: #f7f9fc;
   border-left: 6px solid var(--blue-primary);
   display: flex;
@@ -263,7 +263,7 @@ h1, h2 {
 /* Quotation text */
 .proof-block p {
   font-family: var(--font-serif);
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.55;
   color: var(--blue-primary);
   margin-bottom: 24px;
@@ -271,7 +271,7 @@ h1, h2 {
 
 /* Result line */
 .proof-result {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 32px;
 }
