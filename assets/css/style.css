@@ -231,6 +231,9 @@ h1, h2 {
   align-items: center;
 }
 
+.intro-wide {
+  max-width: var(--max-width);
+}
 .intro-text {
   max-width: 100%;
 }
@@ -238,8 +241,10 @@ h1, h2 {
 .intro-image img {
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 4px;
 }
+
 
 
 .page-intro p {
