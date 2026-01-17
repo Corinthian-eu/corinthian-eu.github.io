@@ -164,10 +164,21 @@ h1, h2 {
   margin-bottom: 18px;
 }
 
-.institutional-metric {
-  font-size: 18px;
+.institutional-center {
+  text-align: center;
+}
+
+.institutional-metric-primary {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--blue-primary);
+  margin-bottom: 6px;
+}
+
+.institutional-metric-secondary {
+  font-size: 16px;
   color: var(--gray-medium);
-  margin-bottom: 48px;
+  margin: 0;
 }
 
 /* ---------- UNIVERSITY SIGNAL BAND ---------- */
