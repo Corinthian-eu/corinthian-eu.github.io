@@ -169,6 +169,25 @@ h1, h2 {
   background-color: var(--blue-light);
 }
 
+/* ---------- INTRO SPLIT AS BAND ---------- */
+.section.band-light .intro-split {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  min-height: 420px;
+  align-items: stretch;
+}
+
+.section.band-light .intro-text {
+  padding-right: 64px;
+}
+
+.section.band-light .intro-split::after {
+  content: "";
+  background: url("../images/sections/far_options.png") center / cover no-repeat;
+}
+
+
+
 /* ---------- IMAGE BANDS ---------- */
 
 /* Upload image to: assets/images/bands/band-burden.png */
@@ -543,6 +562,13 @@ li {
 
 .intro-image {
   order: -1;
+}
+   .section.band-light .intro-split {
+  grid-template-columns: 1fr;
+}
+
+.section.band-light .intro-split::after {
+  height: 260px;
 }
 }
 
