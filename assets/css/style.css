@@ -168,18 +168,25 @@ h1, h2 {
   text-align: center;
 }
 
+/* BIG, authoritative, one-line if possible */
 .institutional-metric-primary {
-  font-size: 20px;
-  font-weight: 500;
+  font-family: var(--font-serif);
+  font-size: 42px;          /* BIGGER than before */
+  line-height: 1.25;
+  font-weight: 700;
   color: var(--blue-primary);
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 
+/* Supporting line, still prominent */
 .institutional-metric-secondary {
-  font-size: 16px;
-  color: var(--gray-medium);
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--blue-primary);
+  opacity: 0.75;
   margin: 0;
 }
+
 
 /* ---------- UNIVERSITY SIGNAL BAND ---------- */
 
