@@ -1,401 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Private Admissions & Academic Management</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Elite academic and admissions service providing end-to-end strategic, academic, and administrative management for high-potential students and families.">
-  <link rel="stylesheet" href="assets/css/style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corinthian — Estudiar en España, bien gestionado</title>
+  <meta name="description" content="Planificamos y coordinamos el proceso para que estudiantes latinoamericanos accedan a universidades en España sin que sus familias tengan que dominar trámites, requisitos y calendarios.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site.js" defer></script>
 </head>
 <body>
-
-<header class="site-header">
-  <div class="container header-container">
-    <div class="branding">
-      <img
-        src="assets/images/logos/logo-blue-yellow-2 - no letters.png"
-        alt="Corinthian emblem"
-        class="logo-symbol"
-      >
-      <img
-        src="assets/images/logos/logo-blue-yellow-2 - text-v2.png"
-        alt="Corinthian"
-        class="logo-text"
-      >
-    </div>
-
-    <nav class="main-nav">
-      <a href="index.html">Overview</a>
-      <a href="programs.html">Offerings</a>
-      <a href="booking.html">Booking</a>
-      <a href="articles/">Articles</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Corinthian, inicio">
+      <img src="assets/images/logos/logo-blue-yellow-2 - no letters.png" alt="" class="brand-mark">
+      <span><strong>Corinthian</strong><small>Acceso universitario en España</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#proceso">Cómo funciona</a>
+      <a href="programs.html">Servicios</a>
+      <a href="private-client.html">Private Client</a>
+      <a class="nav-cta" href="booking.html">Evaluar el caso</a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main class="site-main">
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Latinoamérica → España</p>
+        <h1>Mandar a tu hijo a estudiar en España no debería convertirse en otro trabajo.</h1>
+        <p class="hero-lede">Convertimos universidades, requisitos, documentos y fechas en un único plan. La familia decide; nosotros investigamos, organizamos y mantenemos el proceso en movimiento.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="booking.html">Solicitar una evaluación inicial</a>
+          <a class="text-link" href="#entregable">Ver qué recibes <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="microcopy">Primera fase: estudiantes venezolanos que consideran grados universitarios en España.</p>
+      </div>
+      <aside class="hero-panel" aria-label="Resumen del servicio">
+        <p class="panel-label">Un expediente. Un calendario. Un responsable.</p>
+        <ol class="progress-list">
+          <li><span>01</span><div><strong>Entendemos el objetivo</strong><small>Estudios, presupuesto, preferencias y restricciones.</small></div></li>
+          <li><span>02</span><div><strong>Construimos las opciones</strong><small>Programas comparados con información verificable.</small></div></li>
+          <li><span>03</span><div><strong>Ordenamos la candidatura</strong><small>Documentos, pruebas, responsables y fechas.</small></div></li>
+          <li><span>04</span><div><strong>Hacemos seguimiento</strong><small>Hasta que cada decisión tenga una siguiente acción.</small></div></li>
+        </ol>
+      </aside>
+    </section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content container">
-      <h1>Private Academic & Admissions Office</h1>
-      <p>
-        Elite university placement is not lost on intelligence. It is lost on lack of structured, professional guidance. We help European applicants to competitive economics, finance, and business programs worldwide.
-      </p>
-    </div>
-  </section>
+    <section class="trust-strip" aria-label="Qué aporta Corinthian">
+      <p><strong>Menos incertidumbre.</strong> Sabes qué falta y qué viene después.</p>
+      <p><strong>Menos tiempo perdido.</strong> No empiezas cada trámite desde cero.</p>
+      <p><strong>Mejores decisiones.</strong> Comparas coste, encaje y dificultad real.</p>
+    </section>
 
-  <!-- Authority -->
-<div class="container narrow institutional-center">
-  <p class="institutional-metric-primary">
-    90% of students admitted to one of their top three choices.
-  </p>
+    <section class="section problem-section">
+      <div class="section-heading">
+        <p class="eyebrow">El problema real</p>
+        <h2>No falta información. Falta convertirla en una decisión familiar ejecutable.</h2>
+      </div>
+      <div class="problem-grid">
+        <article><span class="index">01</span><h3>Opciones difíciles de comparar</h3><p>Universidades públicas y privadas, ciudades, titulaciones parecidas, costes distintos y vías de acceso que cambian según el expediente.</p></article>
+        <article><span class="index">02</span><h3>Dependencias que aparecen tarde</h3><p>Una prueba, acreditación, legalización o documento pendiente puede condicionar todo el calendario.</p></article>
+        <article><span class="index">03</span><h3>Nadie dirige el proceso completo</h3><p>Cada institución explica su parte. La familia sigue teniendo que unirlas y decidir qué hacer primero.</p></article>
+      </div>
+    </section>
 
-  <p class="institutional-metric-secondary">
-    Our students apply to some of the world’s most selective programs in Economics, Finance, and Business:
-    
-  </p>
-</div>
+    <section class="section deliverable-section" id="entregable">
+      <div class="deliverable-intro">
+        <p class="eyebrow light">El resultado</p>
+        <h2>De una idea general a un plan que se puede ejecutar.</h2>
+        <p>No entregamos una lista genérica de universidades. Construimos un expediente operativo alrededor del estudiante.</p>
+      </div>
+      <div class="deliverable-card">
+        <div class="document-top"><span>Expediente de candidatura</span><span>Actualizado</span></div>
+        <div class="document-row"><span>Perfil y criterios familiares</span><strong>Confirmado</strong></div>
+        <div class="document-row"><span>Lista corta de programas</span><strong>Comparada</strong></div>
+        <div class="document-row"><span>Requisitos por institución</span><strong>Verificados</strong></div>
+        <div class="document-row"><span>Calendario y responsables</span><strong>Asignados</strong></div>
+        <div class="document-row"><span>Riesgos y preguntas abiertas</span><strong>Visibles</strong></div>
+        <div class="document-row"><span>Siguiente acción</span><strong>Siempre definida</strong></div>
+      </div>
+    </section>
 
+    <section class="section process-section" id="proceso">
+      <div class="section-heading split-heading">
+        <div><p class="eyebrow">Cómo funciona</p><h2>Un proceso dirigido, de principio a fin.</h2></div>
+        <p>La familia mantiene las decisiones importantes. Corinthian mantiene el control operativo: investigación, planificación, preparación y seguimiento.</p>
+      </div>
+      <div class="timeline">
+        <article><span>1</span><div><h3>Evaluación inicial</h3><p>Reunimos expediente, preferencias, presupuesto, fecha objetivo y puntos que pueden limitar las opciones.</p></div></article>
+        <article><span>2</span><div><h3>Mapa de oportunidades</h3><p>Seleccionamos y comparamos programas con una lógica explícita: encaje académico, coste, ciudad, acceso y riesgo.</p></div></article>
+        <article><span>3</span><div><h3>Plan de candidatura</h3><p>Traducimos requisitos en tareas ordenadas, con responsables, dependencias y fechas internas anteriores a los límites oficiales.</p></div></article>
+        <article><span>4</span><div><h3>Ejecución acompañada</h3><p>Revisamos avances, preparamos comunicaciones, detectamos bloqueos y mantenemos a cada parte enfocada en su siguiente acción.</p></div></article>
+      </div>
+    </section>
 
-<div class="institutional-logos">
-  <div class="logos-track">
-    <img src="assets/images/universities/mit.webp" alt="MIT">
-    <img src="assets/images/universities/bocconi.webp" alt="Bocconi University">
-    <img src="assets/images/universities/tilburg.webp" alt="Tilburg University">
-    <img src="assets/images/universities/harvard.webp" alt="Harvard University">
-    <img src="assets/images/universities/erasmus.webp" alt="Erasmus University Rotterdam">
-    <img src="assets/images/universities/penstate.webp" alt="Penn State University">
-    <img src="assets/images/universities/oxford.webp" alt="University of Oxford">
-    <img src="assets/images/universities/stockholmecon.webp" alt="Stockholm School of Economics">
-    <img src="assets/images/universities/ucla.webp" alt="UCLA">
-    <img src="assets/images/universities/warwick.webp" alt="University of Warwick">
-    <img src="assets/images/universities/princenton.webp" alt="Princeton University">
-    <img src="assets/images/universities/kuleuven.webp" alt="KU Leuven">
-    <img src="assets/images/universities/uchicago.webp" alt="University of Chicago">
-    <img src="assets/images/universities/lse.webp" alt="London School of Economics">
-    <img src="assets/images/universities/brown.webp" alt="Brown University">
-    <img src="assets/images/universities/hec.webp" alt="HEC Paris">
-    <img src="assets/images/universities/berkeley.webp" alt="UC Berkley">
-    <img src="assets/images/universities/edinburg.webp" alt="University of Edinburgh">
-    <img src="assets/images/universities/yale.webp" alt="Yale University">
-    <img src="assets/images/universities/zurich.webp" alt="University of Zurich">
-    <img src="assets/images/universities/imperial.webp" alt="Imperial College London">
-    <img src="assets/images/universities/psl.webp" alt="PSL University">
-    <img src="assets/images/universities/umichigan.webp" alt="University of Michigan">
-    <img src="assets/images/universities/ie.webp" alt="IE University">
-    <img src="assets/images/universities/amsterdam.webp" alt="University of Amsterdam">
-    <img src="assets/images/universities/uciii.webp" alt="Universidad Carlos III">
-    <img src="assets/images/universities/londonbusinessschool.webp" alt="London Business School">
-    <img src="assets/images/universities/eth.webp" alt="ETH Zurich">
-    <img src="assets/images/universities/cambridge.webp" alt="University of Cambridge">
-    <img src="assets/images/universities/ohio.webp" alt="Ohio State University">
-    <img src="assets/images/universities/insead.webp" alt="INSEAD">
-    <img src="assets/images/universities/navarra.webp" alt="University of Navarra">
-    <img src="assets/images/universities/minnesotatwin.webp" alt="University of Minnesota">
-    <img src="assets/images/universities/monash.webp" alt="Monash University">
-    <img src="assets/images/universities/cornell.webp" alt="Cornell University">
-    <img src="assets/images/universities/mannheim.webp" alt="University of Mannheim">
-    <img src="assets/images/universities/kings.webp" alt="King’s College London">
-    <img src="assets/images/universities/pantheonsorbonne.webp" alt="Panthéon-Sorbonne">
-    <img src="assets/images/universities/pfabra.webp" alt="Pompeu Fabra University">
-    <img src="assets/images/universities/ucl.webp" alt="UCL">
-    <img src="assets/images/universities/boston.webp" alt="Boston University">
-    <img src="assets/images/universities/nus.webp" alt="National University of Singapore">
-    <img src="assets/images/universities/ludwig.webp" alt="Ludwig Maximilian University">
-    <img src="assets/images/universities/copenhagen.webp" alt="University of Copenhagen">
+    <section class="section comparison-section">
+      <div class="section-heading"><p class="eyebrow">La decisión económica</p><h2>Comparar España con la alternativa completa, no solo con la matrícula.</h2></div>
+      <div class="comparison-layout">
+        <div class="comparison-copy"><p>Estudiar fuera parece caro cuando se mira un único precio. La decisión correcta exige comparar el coste total de ambas rutas: universidad, alojamiento, transporte, seguridad, tiempo familiar, duración y oportunidades posteriores.</p><p>Construimos esa comparación con los supuestos de cada familia. El objetivo no es empujar hacia España; es saber cuándo España tiene sentido.</p></div>
+        <div class="comparison-table" role="table" aria-label="Factores de comparación">
+          <div role="row"><span role="columnheader">Factor</span><span role="columnheader">Lo que analizamos</span></div>
+          <div role="row"><span role="cell">Universidad</span><span role="cell">Matrícula, tasas y duración</span></div>
+          <div role="row"><span role="cell">Vida diaria</span><span role="cell">Vivienda, comida y transporte</span></div>
+          <div role="row"><span role="cell">Proceso</span><span role="cell">Trámites, viajes y margen de error</span></div>
+          <div role="row"><span role="cell">Resultado</span><span role="cell">Encaje, experiencia y opciones futuras</span></div>
+        </div>
+      </div>
+    </section>
 
-    <!-- repeat logos -->
-    <img src="assets/images/universities/mit.webp" alt="MIT">
-    <img src="assets/images/universities/bocconi.webp" alt="Bocconi University">
-    <img src="assets/images/universities/tilburg.webp" alt="Tilburg University">
-    <img src="assets/images/universities/harvard.webp" alt="Harvard University">
-    <img src="assets/images/universities/erasmus.webp" alt="Erasmus University Rotterdam">
-    <img src="assets/images/universities/penstate.webp" alt="Penn State University">
-    <img src="assets/images/universities/oxford.webp" alt="University of Oxford">
-    <img src="assets/images/universities/stockholmecon.webp" alt="Stockholm School of Economics">
-    <img src="assets/images/universities/ucla.webp" alt="UCLA">
-    <img src="assets/images/universities/warwick.webp" alt="University of Warwick">
-    <img src="assets/images/universities/princenton.webp" alt="Princeton University">
-    <img src="assets/images/universities/kuleuven.webp" alt="KU Leuven">
-    <img src="assets/images/universities/uchicago.webp" alt="University of Chicago">
-    <img src="assets/images/universities/lse.webp" alt="London School of Economics">
-    <img src="assets/images/universities/brown.webp" alt="Brown University">
-    <img src="assets/images/universities/hec.webp" alt="HEC Paris">
-    <img src="assets/images/universities/berkeley.webp" alt="UC Berkley">
-    <img src="assets/images/universities/edinburg.webp" alt="University of Edinburgh">
-    <img src="assets/images/universities/yale.webp" alt="Yale University">
-    <img src="assets/images/universities/zurich.webp" alt="University of Zurich">
-    <img src="assets/images/universities/imperial.webp" alt="Imperial College London">
-    <img src="assets/images/universities/psl.webp" alt="PSL University">
-    <img src="assets/images/universities/umichigan.webp" alt="University of Michigan">
-    <img src="assets/images/universities/ie.webp" alt="IE University">
-    <img src="assets/images/universities/amsterdam.webp" alt="University of Amsterdam">
-    <img src="assets/images/universities/uciii.webp" alt="Universidad Carlos III">
-    <img src="assets/images/universities/londonbusinessschool.webp" alt="London Business School">
-    <img src="assets/images/universities/eth.webp" alt="ETH Zurich">
-    <img src="assets/images/universities/cambridge.webp" alt="University of Cambridge">
-    <img src="assets/images/universities/ohio.webp" alt="Ohio State University">
-    <img src="assets/images/universities/insead.webp" alt="INSEAD">
-    <img src="assets/images/universities/navarra.webp" alt="University of Navarra">
-    <img src="assets/images/universities/minnesotatwin.webp" alt="University of Minnesota">
-    <img src="assets/images/universities/monash.webp" alt="Monash University">
-    <img src="assets/images/universities/cornell.webp" alt="Cornell University">
-    <img src="assets/images/universities/mannheim.webp" alt="University of Mannheim">
-    <img src="assets/images/universities/kings.webp" alt="King’s College London">
-    <img src="assets/images/universities/pantheonsorbonne.webp" alt="Panthéon-Sorbonne">
-    <img src="assets/images/universities/pfabra.webp" alt="Pompeu Fabra University">
-    <img src="assets/images/universities/ucl.webp" alt="UCL">
-    <img src="assets/images/universities/boston.webp" alt="Boston University">
-    <img src="assets/images/universities/nus.webp" alt="National University of Singapore">
-    <img src="assets/images/universities/ludwig.webp" alt="Ludwig Maximilian University">
-    <img src="assets/images/universities/copenhagen.webp" alt="University of Copenhagen">
-     
-    <img src="assets/images/universities/mit.webp" alt="MIT">
-    <img src="assets/images/universities/bocconi.webp" alt="Bocconi University">
-    <img src="assets/images/universities/tilburg.webp" alt="Tilburg University">
-    <img src="assets/images/universities/harvard.webp" alt="Harvard University">
-    <img src="assets/images/universities/erasmus.webp" alt="Erasmus University Rotterdam">
-    <img src="assets/images/universities/penstate.webp" alt="Penn State University">
-    <img src="assets/images/universities/oxford.webp" alt="University of Oxford">
-    <img src="assets/images/universities/stockholmecon.webp" alt="Stockholm School of Economics">
-    <img src="assets/images/universities/ucla.webp" alt="UCLA">
-    <img src="assets/images/universities/warwick.webp" alt="University of Warwick">
-    <img src="assets/images/universities/princenton.webp" alt="Princeton University">
-    <img src="assets/images/universities/kuleuven.webp" alt="KU Leuven">
-    <img src="assets/images/universities/uchicago.webp" alt="University of Chicago">
-    <img src="assets/images/universities/lse.webp" alt="London School of Economics">
-    <img src="assets/images/universities/brown.webp" alt="Brown University">
-    <img src="assets/images/universities/hec.webp" alt="HEC Paris">
-    <img src="assets/images/universities/berkeley.webp" alt="UC Berkley">
-    <img src="assets/images/universities/edinburg.webp" alt="University of Edinburgh">
-    <img src="assets/images/universities/yale.webp" alt="Yale University">
-    <img src="assets/images/universities/zurich.webp" alt="University of Zurich">
-    <img src="assets/images/universities/imperial.webp" alt="Imperial College London">
-    <img src="assets/images/universities/psl.webp" alt="PSL University">
-    <img src="assets/images/universities/umichigan.webp" alt="University of Michigan">
-    <img src="assets/images/universities/ie.webp" alt="IE University">
-    <img src="assets/images/universities/amsterdam.webp" alt="University of Amsterdam">
-    <img src="assets/images/universities/uciii.webp" alt="Universidad Carlos III">
-    <img src="assets/images/universities/londonbusinessschool.webp" alt="London Business School">
-    <img src="assets/images/universities/eth.webp" alt="ETH Zurich">
-    <img src="assets/images/universities/cambridge.webp" alt="University of Cambridge">
-    <img src="assets/images/universities/ohio.webp" alt="Ohio State University">
-    <img src="assets/images/universities/insead.webp" alt="INSEAD">
-    <img src="assets/images/universities/navarra.webp" alt="University of Navarra">
-    <img src="assets/images/universities/minnesotatwin.webp" alt="University of Minnesota">
-    <img src="assets/images/universities/monash.webp" alt="Monash University">
-    <img src="assets/images/universities/cornell.webp" alt="Cornell University">
-    <img src="assets/images/universities/mannheim.webp" alt="University of Mannheim">
-    <img src="assets/images/universities/kings.webp" alt="King’s College London">
-    <img src="assets/images/universities/pantheonsorbonne.webp" alt="Panthéon-Sorbonne">
-    <img src="assets/images/universities/pfabra.webp" alt="Pompeu Fabra University">
-    <img src="assets/images/universities/ucl.webp" alt="UCL">
-    <img src="assets/images/universities/boston.webp" alt="Boston University">
-    <img src="assets/images/universities/nus.webp" alt="National University of Singapore">
-    <img src="assets/images/universities/ludwig.webp" alt="Ludwig Maximilian University">
-    <img src="assets/images/universities/copenhagen.webp" alt="University of Copenhagen">
-  </div>
-</div>
-  
- <!-- Social proof -->
-  <section class="section band-light proof-wide">
-    <div class="proof-split">
+    <section class="section service-paths">
+      <div class="section-heading"><p class="eyebrow">Dos niveles de delegación</p><h2>El mismo rigor. Distinto grado de acompañamiento.</h2></div>
+      <div class="path-grid">
+        <article class="path-card featured"><p class="card-label">Servicio principal</p><h3>Acceso España</h3><p>Para familias que necesitan opciones claras, un calendario fiable y acompañamiento durante las candidaturas.</p><ul><li>Diagnóstico familiar y académico</li><li>Selección comparada de programas</li><li>Plan de requisitos y fechas</li><li>Seguimiento de la candidatura</li></ul><a class="button button-primary" href="programs.html">Ver el servicio</a></article>
+        <article class="path-card private"><p class="card-label">Mandato privado</p><h3>Private Client</h3><p>Para familias que desean delegar la coordinación académica y de admisiones con una atención altamente personalizada.</p><ul><li>Planificación académica de largo plazo</li><li>Coordinación integral</li><li>Seguimiento continuo</li><li>Información ejecutiva para los padres</li></ul><a class="text-link" href="private-client.html">Conocer Private Client →</a></article>
+      </div>
+    </section>
 
-  
-      <!-- Left: Testimonial -->
-      <blockquote class="proof-block">
-        <p>
-          “I knew I was smart and had the potential, but I was completely lost with all the requirements. Once I had a clear plan and support at each step, I could focus my efforts properly. The results followed.”
-        </p>
-  
-        <p class="proof-result">
-          Result: admission to the London School of Economics
-          (Mathematics and Economics).
-        </p>
-  
-        <cite>
-          — Student from Luxembourg
-        </cite>
-      </blockquote>
-  
-      <!-- Right: Evidence panel -->
-      <div class="proof-evidence"></div>
-  
-    </div>
-  </section>
-  
-   <!-- Social proof — dual quotes -->
-  <section class="section band-light proof-wide">
-    <div class="proof-dual">
-  
-      <blockquote class="proof-block">
-        <p>
-          “Effort alone wasn’t enough. What made the difference was structure,
-          feedback, and correcting mistakes early.”
-        </p>
-  
-        <cite>
-          — Applicant form Madrid
-        </cite>
-      </blockquote>
-  
-      <blockquote class="proof-block">
-        <p>
-          “A strong background is always the first thing I take into consideration.”
-        </p>
-  
-        <cite>
-          — Client, on why they chose us.
-        </cite>
-      </blockquote>
-  
-    </div>
-  </section>
- 
+    <section class="section faq-section">
+      <div class="section-heading"><p class="eyebrow">Preguntas iniciales</p><h2>Antes de empezar.</h2></div>
+      <div class="faq-list">
+        <details><summary>¿Trabajan únicamente con Venezuela?</summary><p>Venezuela es el punto de partida porque permite desarrollar un proceso específico y de alta calidad. Podemos evaluar otros perfiles latinoamericanos si su acceso a España encaja con nuestra capacidad actual.</p></details>
+        <details><summary>¿Solo recomiendan universidades privadas?</summary><p>No. Analizamos opciones públicas y privadas según el perfil, el presupuesto y la vía de acceso aplicable. La recomendación debe tener sentido para la familia, no para una categoría de universidad.</p></details>
+        <details><summary>¿Corinthian garantiza la admisión?</summary><p>No. Ningún asesor controla la decisión de una universidad. Nuestro trabajo es mejorar la calidad de la decisión, anticipar requisitos y reducir errores y retrasos evitables.</p></details>
+        <details><summary>¿Cuándo conviene empezar?</summary><p>Cuanto antes existan dudas sobre pruebas, documentos o acceso, más opciones habrá para resolverlas. La evaluación inicial sirve precisamente para determinar el calendario real del estudiante.</p></details>
+      </div>
+    </section>
 
+    <section class="closing-cta">
+      <div><p class="eyebrow light">Primer paso</p><h2>En 30 minutos podemos determinar si España encaja y qué habría que resolver primero.</h2></div>
+      <a class="button button-light" href="booking.html">Solicitar evaluación</a>
+    </section>
+  </main>
 
-
-
-  <!-- CTA -->
-  
-  <div class="institutional-cta container">
-    <a href="booking.html" class="institutional-link">Request a private consultation</a>
-  </div>
-</section>
-  
-  <!-- INTRO -->
-  <section class="section band-light">
-  <div class="container intro-split intro-wide">
-    <div class="intro-text">
-      <p>
-        Families pursuing competitive economics, finance, and business programs today face a set of structural problems that directly affect outcomes.
-        The process is opaque, fragmented, and filled with administrative requirements that families are expected to learn and execute on their own.
-      </p>
-      <p>
-        This places sustained pressure on families and forces students to devote substantial time to logistics and procedural decisions,
-        often at the expense of academic focus and without clarity on which efforts meaningfully influence results.
-      </p>
-      <p>
-        Most families are not underprepared intellectually.
-        They lack the clarity on where to direct their efforts, and how to remove all frictions to actually achieve the outcomes they deserve.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-  <!-- HOW WE WORK (BLUE IMAGE BAND) -->
-  <section class="section band-image band-how">
-    <div class="container narrow">
-      <h2>How we work</h2>
-
-      <p>
-        Our work begins with precision, not assumptions.
-      </p>
-
-      <p>
-        We do not apply a generic model or a predefined checklist.
-        We assess the specific needs, constraints, and weak points of each student,
-        and we build the process around that reality.
-      </p>
-
-      <h3>This includes:</h3>
-      <ul>
-        <li>Academic gaps or inconsistencies.</li>
-        <li>Testing strategy and readiness.</li>
-        <li>Extracurricular direction and credibility.</li>
-        <li>Reference selection and positioning.</li>
-        <li>Personal constraints related to school, family, or timing.</li>
-      </ul>
-
-      <p>
-        The objective is not to do more, but to do exactly what is required,
-        in the correct order, with no wasted effort.
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTINUOUS MANAGEMENT (WHITE IMAGE BAND) -->
-  <section class="section band-light-image">
-    <div class="container narrow centered">
-      <h2>Continuous, hands-on management</h2>
-
-      <p>
-        Once the plan is defined, we remain actively involved throughout execution.
-      </p>
-
-      <p>
-        We work alongside the student across all relevant dimensions.
-      </p>
-
-      <ul>
-        <li>Translating long-term goals into concrete weekly objectives.</li>
-        <li>Clarifying what must be done now and what can wait.</li>
-        <li>Identifying when additional academic support is necessary and coordinating it.</li>
-        <li>Ensuring extracurricular choices are coherent, credible, and sustainable.</li>
-        <li>Preparing and managing the reference process so it is timely and aligned.</li>
-      </ul>
-
-      <p>
-        Students are not left to self-manage.
-        They are guided, corrected, and supported continuously.
-      </p>
-    </div>
-  </section>
-
-  <!-- PARENTS -->
-  <section class="section band-dark">
-    <div class="container narrow">
-      <h2>Complete friction removal for parents</h2>
-
-      <p>
-        For parents, our role is to remove the operational burden entirely.
-      </p>
-
-      <p>
-        We take responsibility for:
-      </p>
-
-      <ul>
-        <li>All administrative coordination.</li>
-        <li>Exam identification, scheduling, and registrations.</li>
-        <li>Application portals, documentation, and deadlines.</li>
-        <li>Timeline management across institutions and countries.</li>
-        <li>Ongoing communication with schools and external parties when needed.</li>
-      </ul>
-
-      <p>
-        Parents are not required to track deadlines, manage systems, or intervene to keep the process moving.
-        They receive clarity, not tasks.
-      </p>
-    </div>
-  </section>
-
-  <!-- CTA OFFERINGS -->
-  <section class="section band-accent cta-offerings">
-    <div class="container narrow centered">
-      <p class="cta-text">
-        For a detailed description of our engagement structure, scope, and terms,
-        see our <a href="programs.html" class="cta-link">Offerings</a>.
-      </p>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <p>© Corinthian</p>
-  </div>
-</footer>
-
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="index.html">Corinthian</a><p>Acceso universitario en España para familias latinoamericanas.</p></div>
+    <div><p class="footer-title">Contacto</p><a href="mailto:admin@corinthian-eu.com">admin@corinthian-eu.com</a></div>
+    <div><p class="footer-title">Servicios</p><a href="programs.html">Acceso España</a><a href="private-client.html">Private Client</a></div>
+    <p class="footer-bottom">© 2026 Corinthian. Información inicial sujeta al perfil y a las fuentes oficiales aplicables.</p>
+  </footer>
 </body>
 </html>
