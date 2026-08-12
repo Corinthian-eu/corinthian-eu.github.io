@@ -20,3 +20,18 @@ function updateAvailability() {
 
 contactOptions.forEach((option) => option.addEventListener('change', updateAvailability));
 updateAvailability();
+
+const zohoLeadForm = document.querySelector('#zoho-lead-form');
+const leadSuccess = document.querySelector('#lead-success');
+
+if (zohoLeadForm && leadSuccess) {
+  let submissionMayHaveStarted = false;
+  window.setTimeout(() => { submissionMayHaveStarted = true; }, 2500);
+
+  zohoLeadForm.addEventListener('load', () => {
+    if (!submissionMayHaveStarted) return;
+    zohoLeadForm.hidden = true;
+    leadSuccess.hidden = false;
+    leadSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+}
