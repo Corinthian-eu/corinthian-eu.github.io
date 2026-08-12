@@ -14,3 +14,5 @@
 @media(max-width:900px){.human-trust,.private-intro{grid-template-columns:1fr}.trust-photo img{height:330px}.private-intro>div:last-child{padding-top:0}}
 .zoho-lead-form{width:100%;height:1180px;border:0;background:#fff;display:block}
 @media(max-width:600px){.zoho-lead-form{height:1320px}}
+.human-trust{grid-template-columns:1fr 1fr;gap:8vw}.plan-price{font-family:var(--serif);font-size:1.55rem;color:var(--navy);margin:8px 0 25px}.plan-price small{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-top:5px}.private-plan .plan-price{color:var(--gold)}.private-price{font-family:var(--serif);color:var(--gold)!important;font-size:1rem!important;margin-top:-8px}.booking-points{margin-top:55px}
+@media(max-width:900px){.human-trust{grid-template-columns:1fr}}
