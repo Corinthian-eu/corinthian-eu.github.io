@@ -26,7 +26,7 @@ const leadSuccess = document.querySelector('#lead-success');
 
 if (zohoLeadForm && leadSuccess) {
   let submissionMayHaveStarted = false;
-  window.setTimeout(() => { submissionMayHaveStarted = true; }, 2500);
+  window.setTimeout(() => { submissionMayHaveStarted = true; }, 8000);
 
   zohoLeadForm.addEventListener('load', () => {
     if (!submissionMayHaveStarted) return;
