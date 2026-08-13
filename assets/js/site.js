@@ -35,3 +35,31 @@ if (zohoLeadForm && leadSuccess) {
     leadSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 }
+
+const calendarConfig = window.CORINTHIAN_CALENDAR || {};
+const calendarLinks = document.querySelectorAll('[data-calendar-link]');
+const calendarNotes = document.querySelectorAll('[data-calendar-note]');
+const hasLiveCalendar = /^https:\/\/calendar\.google\.com\//.test(calendarConfig.bookingUrl || '');
+
+calendarLinks.forEach((link) => {
+  if (hasLiveCalendar) {
+    link.href = calendarConfig.bookingUrl;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.dataset.calendarStatus = 'live';
+    return;
+  }
+
+  const email = calendarConfig.fallbackEmail || 'hola@corinthian-eu.com';
+  link.href = `mailto:${email}?subject=${encodeURIComponent('Solicitud de llamada con Corinthian')}`;
+  link.removeAttribute('target');
+  link.removeAttribute('rel');
+  link.dataset.calendarStatus = 'fallback';
+  if (link.dataset.fallbackLabel) link.textContent = link.dataset.fallbackLabel;
+});
+
+calendarNotes.forEach((note) => {
+  note.textContent = hasLiveCalendar
+    ? 'La agenda muestra las horas en tu zona. La confirmación incluirá el enlace de Google Meet.'
+    : 'Escríbenos y te propondremos horarios en tu zona. La llamada será por Google Meet.';
+});
