@@ -64,6 +64,6 @@ calendarLinks.forEach((link) => {
 
 calendarNotes.forEach((note) => {
   note.textContent = hasLiveCalendar
-    ? 'La agenda muestra las horas en tu zona. La confirmación incluirá el enlace de Google Meet.'
-    : 'Escríbenos y te propondremos horarios en tu zona. La llamada será por Google Meet.';
+    ? 'La agenda muestra las horas disponibles en tu zona. Recibirás la invitación al confirmar.'
+    : 'Escríbenos y te propondremos horarios en tu zona.';
 });
