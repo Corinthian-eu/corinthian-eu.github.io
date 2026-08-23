@@ -1,0 +1,41 @@
+.article-cta {
+  margin-top: 42px;
+  padding: clamp(28px, 5vw, 46px);
+  background: var(--navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.article-cta .eyebrow {
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.article-cta h2 {
+  color: #fff;
+  margin: 0 0 10px;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.article-cta p:not(.eyebrow) {
+  color: #d7e1ec;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.article-cta .button { flex: 0 0 auto; }
+
+@media (max-width: 700px) {
+  .article-cta {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .article-cta .button {
+    width: 100%;
+    text-align: center;
+  }
+}
