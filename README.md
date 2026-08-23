@@ -8,6 +8,7 @@ Sitio público para el servicio de acceso universitario España y la línea sepa
 - `programs.html`: alcance del servicio Acceso España.
 - `booking.html`: evaluación inicial conectada a Zoho Forms; tras el envío permite reservar en Google Calendar.
 - `private-client.html`: presentación independiente del mandato premium.
+- `articles/`: índice editorial y artículos publicados.
 
 ## Agenda y videollamada
 
