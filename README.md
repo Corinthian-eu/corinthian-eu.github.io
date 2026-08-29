@@ -17,3 +17,7 @@ Sitio público para el servicio de acceso universitario España y la línea sepa
 - La URL única se configura en `assets/js/calendar-config.js`.
 - Si todavía no existe una URL válida de Google Calendar, los botones cambian automáticamente a correo y nunca muestran un enlace roto.
 - La disponibilidad publicada debe respetar la ventana 05:00–23:00 de Madrid y excluir las clases, el trabajo y cualquier compromiso bloqueado en el calendario.
+
+## Publicación
+
+Todo cambio sigue `../01-operaciones/SOP-05-cambios-y-publicacion-web.md`. Un cambio no se considera publicado hasta enviarlo a GitHub y comprobar el resultado en la URL pública.
