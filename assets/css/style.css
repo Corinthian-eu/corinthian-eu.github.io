@@ -44,3 +44,6 @@
 /* Photo-free founder sections */
 .trust-founder-layout,.po-advisor{grid-template-columns:1fr}
 .trust-explanation{max-width:900px}
+
+/* Keep the Academic Office opening photo fully visible on phones. */
+@media(max-width:600px){.home-opening-photo img{height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important}}
